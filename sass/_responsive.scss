@@ -1,0 +1,10 @@
+@include media-md {
+  @media screen and (min-width: 768px) {
+    .cart-overlay {
+      .cart {
+        width: 30vw;
+        min-width: 450px;
+      }
+    }
+  }
+}

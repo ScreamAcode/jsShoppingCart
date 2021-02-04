@@ -1,0 +1,30 @@
+$primary-color: rgb(255, 186, 57);
+$secondary-color: rgb(20, 172, 236);
+$background-color: #ddd;
+$text-color: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: "Lato", sans-serif;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
